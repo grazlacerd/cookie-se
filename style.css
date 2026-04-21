@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bree+Serif&display=swap');
 
 body {
-    background-color: #ffeaab;
+    background-color: #b28735;
     max-width: 600px;
     margin: 50px auto;
     width: 90%;
@@ -9,10 +9,6 @@ body {
     font-family: "Albert Sans", sans-serif;
     color: black;
     width: 40vw;
-}
-
-.icon {
-    border-radius: 50%;
 }
 
 img {
