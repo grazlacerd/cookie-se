@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bree+Serif&display=swap');
+body {
+    background-color: #ffe189;
+    max-width: 600px;
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+    font-family: "Albert Sans", sans-serif;
+    color: black;
+    width: 40vw;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1{
+    font-family: 'Bree Serif', sans-serif;
+    padding: 0;
+    color: #5d381c;
+    line-height: 2px;
+}
+
+.insta {
+    color: rgb(100, 100, 100);
+    padding: 0 40px 10px 40px;
+}
+
+.descricao, .entregas, .duvidas {
+    background-color: #fffcf3;
+    border-radius: 20px;
+    margin: 20px 70px;
+    padding: 2px;
+    box-shadow: 1px 1px 8px #5d381c;
+}
+
+.paragrafo {
+    display: none;
+}
+  
+.descricao p, .entregas p, .duvidas p {
+    line-height: 30px;
+    margin: 0 10px 10px 10px;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+.container span {
+    font-family: 'Bree Serif', sans-serif;
+    color: #5d381c;
+}
+
+.mostrar {
+    display: block;
+    background-color: #fffcf3;
+    border-radius: 20px;
+    margin: 18px 32px;
+    padding: 2px;
+    transform: scale(1.02);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration: underline;
+    font-family: 'Bree Serif', sans-serif;
+    color: #5d381c;
+}
+
+a:hover {
+    color:black;
+}
+
+address {
+    font-style: normal;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        margin: 5vh auto; 
+        width: 90vw; 
+    }
+
+    .descricao, .entregas, .duvidas {
+        margin: 20px 15px; 
+        padding: 5px 2px; 
+    }
+
+    .mostrar {
+        margin: 15px 5px;
+        transform: scale(1.02);
+        width: auto;
+    }
+
+    img {
+        width: 120px;
+        height: auto;
+    }
+
+    div p {
+        line-height: 24px; 
+        font-size: 15px;  
+    }
+}
