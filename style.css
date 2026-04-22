@@ -27,7 +27,7 @@ h1{
     padding: 0 40px 10px 40px;
 }
 
-.descricao, .entregas, .duvidas {
+.descricao, .entregas, .duvidas, .pagamento {
     background-color: #fffcf3;
     border-radius: 20px;
     margin: 20px 70px;
@@ -39,7 +39,7 @@ h1{
     display: none;
 }
   
-.descricao p, .entregas p, .duvidas p {
+.descricao p, .entregas p, .duvidas p, .pagamento p {
     line-height: 30px;
     margin: 0 10px 10px 10px;
 }
