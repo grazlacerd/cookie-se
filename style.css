@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bree+Serif&display=swap');
-
 body {
     background-color: #ffeaab;
     max-width: 600px;
@@ -30,10 +29,11 @@ h1{
 .descricao, .entregas, .duvidas, .pagamento {
     background-color: #fffcf3;
     border-radius: 20px;
-    margin: 20px 70px;
+    margin: 10px 100px 30px 100px;
     padding: 2px;
     box-shadow: 1px 1px 8px #5d381c;
 }
+
 
 .paragrafo {
     display: none;
@@ -51,6 +51,12 @@ h3 {
 .container span {
     font-family: 'Bree Serif', sans-serif;
     color: #5d381c;
+}
+
+.pagamento p svg {
+    width: 20px;
+    height: 20px;
+    fill: #4ab0a7; 
 }
 
 .mostrar {
@@ -85,8 +91,8 @@ address {
         width: 90vw; 
     }
 
-    .descricao, .entregas, .duvidas {
-        margin: 20px 15px; 
+    .descricao, .entregas, .duvidas, .pagamento {
+        margin: 20px 20px; 
         padding: 5px 2px; 
     }
 
