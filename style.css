@@ -1,114 +1,269 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bree+Serif&display=swap');
-body {
-    background-color: #ffeaab;
-    max-width: 600px;
-    margin: 50px auto;
-    width: 90%;
-    text-align: center;
-    font-family: "Albert Sans", sans-serif;
-    color: black;
-    width: 40vw;
-}
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Coiny&family=Cookie&display=swap');
 
-img {
-    border-radius: 50%;
-}
-
-h1{
-    font-family: 'Bree Serif', sans-serif;
+* {
+    margin: 0;
     padding: 0;
-    color: #5d381c;
-    line-height: 2px;
+    box-sizing: border-box;
 }
 
-.insta {
-    color: rgb(100, 100, 100);
-    padding: 0 40px 10px 40px;
+body {
+    height: 73vh;
+    font-family: "Albert Sans", sans-serif;
+    background-image: url(img/background1.png);
+    background-size: 400px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.navBarMobile {
+    display: none;
+    
+}
+
+.home {
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+   justify-content: space-evenly;
+   margin: 26vh auto 20px auto;
+}
+
+.home img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: black 1px solid;
+    margin-right: 130px;
+    margin-left: 50px;
+}
+
+.principal img {
+    display: none;
+    border: none;
+    height: 100px;
+    width: 100px;
+}
+
+.principal {
+    margin-left: 30px;
+    line-height: 100px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: "Coiny", sans-serif;
+    color: #5d381c;
+}
+
+.principal p {
+    font-family: "Coiny", sans-serif;
+    font-size: 100px;
+}
+
+.opcoes {
+    margin-top: 30vh;
+    height: 120vh;
+    background-color: #5d381c;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: "Coiny", sans-serif;
+}
+
+.opcoes h2 {
+    text-align: center;
+    padding-top: 20vh;
+    color: #ffffff;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+    justify-content: center;
+
+}
+
+.card-cookie, .card-torta {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 300px 70px 10px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+    margin: 0 60px 20px 60px;
+    animation: move 2s infinite ease-in-out;
+}
+
+.card-cookie p:nth-of-type(2) span, .card-torta p:nth-of-type(2) span {
+    color:#5d381c;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.card-cookie p:nth-of-type(1), .card-torta p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.infos h2 {
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 10vh;;
+}
+
+.infos span {
+    font-weight: bold;
+    color: #5d381c;
 }
 
 .descricao, .entregas, .duvidas, .pagamento {
-    background-color: #fffcf3;
-    border-radius: 20px;
-    margin: 10px 100px 30px 100px;
-    padding: 2px;
-    box-shadow: 1px 1px 8px #5d381c;
+    margin-left: 20px;
 }
 
-
-.paragrafo {
-    display: none;
-}
-  
-.descricao p, .entregas p, .duvidas p, .pagamento p {
+.descricao p, .entregas p, .pagamento p {
     line-height: 30px;
-    margin: 0 10px 10px 10px;
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+.duvidas p {
+    line-height: 20px;
+    margin-left: 25px;
+    padding-bottom: 2px;
 }
 
-h3 {
-    cursor: pointer;
-}
-
-.container span {
-    font-family: 'Bree Serif', sans-serif;
-    color: #5d381c;
-}
-
-.pagamento p svg {
+ .pagamento svg {
     width: 20px;
     height: 20px;
-    fill: #4ab0a7; 
+
+ }
+.infos h3 {
+    padding-bottom: 20px;
+    padding-top: 40px;
 }
 
-.mostrar {
-    display: block;
-    background-color: #fffcf3;
-    border-radius: 20px;
-    margin: 18px 32px;
-    padding: 2px;
-    transform: scale(1.02);
-}
-
-a {
-    color: black;
+address a {
+    color: #000000;
+    font-weight: bold;
     text-decoration: none;
-    text-decoration: underline;
-    font-family: 'Bree Serif', sans-serif;
-    color: #5d381c;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #5d381c;
+    margin-left: 25px;
+    transition: 0.3s;
 }
 
-a:hover {
-    color:black;
+address a:hover {
+    background-color: #5d381c;
+    color: #fff;
 }
 
-address {
-    font-style: normal;
+footer {
+    background-color: #5d381c;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 
-@media (max-width: 768px) {
-    body {
-        margin: 5vh auto; 
-        width: 90vw; 
+@keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px); 
+    }
+}
+
+@media (max-width: 480px) {
+    
+body {
+    height: auto;
+    background-size: 200px; 
     }
 
-    .descricao, .entregas, .duvidas, .pagamento {
-        margin: 20px 20px; 
-        padding: 5px 2px; 
+.navBarMobile {
+    display: block; 
+    width: 100%;
     }
 
-    .mostrar {
-        margin: 15px 5px;
-        transform: scale(1.02);
-        width: auto;
+.navBarMobile img {
+    width: 100%;
+    display: block;
     }
 
-    img {
-        width: 200px;
-        height: auto;
+
+.home {
+    flex-direction: column;
+    margin: 5vh auto;
+    text-align: center;
     }
 
-    div p {
-        line-height: 24px; 
-        font-size: 15px;  
+.home img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 20px auto;
+}
+
+.principal {
+    margin-left: 0;
+    line-height: 1.2; 
     }
+
+.principal img {
+    display: block;
+    border: none;
+    height: 100px;
+    width: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.principal p {
+    font-size: 30px; 
+}
+
+.opcoes {
+    height: auto; 
+    padding-bottom: 5vh;
+}
+
+.cards {
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.card-cookie, .card-torta {
+    width: 85%;
+    margin: 20px 0;
+    padding: 250px 20px; 
+    line-height: normal;
+}
+
+.infos h2 {
+    padding-top: 8vh;
+    font-size: 28px;
+}
+
+.descricao, .entregas, .duvidas, .pagamento {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.descricao p, .entregas p, .pagamento p, .duvidas p {
+    margin-left: 10px;
+    font-size: 14px; 
+}
+
+address a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 2px;
+}
 }
