@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Coiny&family=Cookie&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,14 +42,7 @@ body {
     margin-left: 50px;
 }
 
-.principal img {
-    display: none;
-    border: none;
-    height: 100px;
-    width: 100px;
-}
-
-.principal {
+.principalPC {
     margin-left: 30px;
     line-height: 100px;
 }
@@ -53,12 +50,22 @@ body {
 h1 {
     font-size: 100px;
     font-family: "Coiny", sans-serif;
+    color: #000000;
+}
+
+.principalPC h1 span {
     color: #5d381c;
 }
 
-.principal p {
-    font-family: "Coiny", sans-serif;
-    font-size: 100px;
+.principalMobile img {
+    display: none;
+    border: none;
+    height: 100px;
+    width: 100px;
+}
+
+.principalMobile{
+    display: none;
 }
 
 .opcoes {
@@ -148,16 +155,10 @@ address a {
     color: #000000;
     font-weight: bold;
     text-decoration: none;
-    padding: 6px;
-    border-radius: 5px;
-    border: 1px solid #5d381c;
-    margin-left: 25px;
-    transition: 0.3s;
 }
 
 address a:hover {
-    background-color: #5d381c;
-    color: #fff;
+    color: #5d381c;
 }
 
 footer {
@@ -178,7 +179,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     
 body {
     height: auto;
@@ -193,7 +194,7 @@ body {
 .navBarMobile img {
     width: 100%;
     display: block;
-    }
+}
 
 
 .home {
@@ -203,28 +204,45 @@ body {
     }
 
 .home img {
-    width: 220px;
-    height: 220px;
-    margin: 20px auto 20px auto;
+    width: 200px;
+    height: 200px;
+    margin: 40px auto 20px auto;
 }
 
-.principal {
+.principalPC {
+    display: none;
+}
+
+.principalMobile {
+    display: block;
     margin-left: 0;
     line-height: 1.2; 
     }
 
-.principal img {
+.principalMobile img {
     display: block;
     border: none;
     height: 100px;
     width: 100px;
+    margin-bottom: 140px;
 }
 
-h1 {
-    font-size: 50px;
+.principalMobile h1 {
+    font-size: 30px;
 }
 
-.principal p {
+.principalMobile h1 span {
+    color: #5d381c;
+}
+
+.principalMobile a {
+    animation: move 2s infinite ease-in-out;
+    text-decoration: none;
+    color: #000000;
+    font-size: 35px;
+}
+
+.principalMobile p {
     font-size: 30px; 
 }
 
@@ -251,19 +269,29 @@ h1 {
     font-size: 28px;
 }
 
+.infos h3 {
+    text-align: center;
+}
+
+
 .descricao, .entregas, .duvidas, .pagamento {
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.descricao p, .entregas p, .pagamento p, .duvidas p {
-    margin-left: 10px;
-    font-size: 14px; 
+.container p, .container a {
+    width: 80vw;
+    font-size: 18px; 
+}
+
+svg {
+  position: relative;
+  top: 4px; 
+
 }
 
 address a {
-    display: inline-block;
-    margin-left: 10px;
-    margin-top: 2px;
+    margin-left: 20px;
 }
+
 }
