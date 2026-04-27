@@ -161,6 +161,11 @@ address a:hover {
     color: #5d381c;
 }
 
+svg {
+  position: relative;
+  top: 4px; 
+}
+
 footer {
     background-color: #5d381c;
     color: #ffffff;
